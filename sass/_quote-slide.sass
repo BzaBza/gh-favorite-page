@@ -1,5 +1,48 @@
-.quote
+.quote-slider
+    padding: 0
+
+.slide
+    @media (max-width: 1077px)
+        display: flex
+        flex-wrap: wrap
+
+.slide-info
+    width: 30%
+    color: #e8ecee
+    margin-left: 2em
+    align-items: center
+    @media (max-width: 1077px)
+        width: 100%
+        padding-top: 2em
+
+.slide-red-side
     background-color: #53354a
+    @media (max-width: 1077px)
+        width: 100%
+
 .carousel-caption
     position: relative
     background-color: #53354a
+
+.else-slide
+    display: none
+
+.slide-active
+    display: flex
+
+
+.slide-image
+    padding: 0
+
+.pagin
+    width: 100%
+    justify-content: center
+    display: flex
+    padding-bottom: 2em
+    li
+        cursor: pointer
+        margin-left: 1em
+        background: #e8ecee
+        border-radius: 50%
+        width: 10px
+        height: 10px
