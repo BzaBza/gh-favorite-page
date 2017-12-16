@@ -1,7 +1,7 @@
 $(document).ready(function () {
     const setActive = function () {
         const self = $(this);
-        const listMenu = $('#nav li');
+        const listMenu = $('.navigation li');
         let curIndex = -1;
 
         $('.nav-header').each(function (index) {
@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     setActive();
 
-    $('.nav li').on('click', function (e) {
+    $('.navigation li').on('click', function (e) {
         e.preventDefault();
 
         const index = $(this).index();
@@ -47,8 +47,8 @@ $(document).ready(function () {
                 posDoc > topHeader &&
                 posDoc < botHeader
             ) {
-                $('.nav li').removeClass('active');
-                $('.nav li').eq(index).addClass('active');
+                $('.navigation li').removeClass('active');
+                $('.navigation li').eq(index).addClass('active');
             }
 
         });
@@ -57,6 +57,7 @@ $(document).ready(function () {
         let headerStyle = $('.main-header');
         let navBarStyle = $('.nav-bar');
         let welcomeSection =$('.welcome');
+
         if ($(welcomeSection).position().top > 38){
             headerStyle.css('height',  '70px');
             headerStyle.css('background', '#3a3e64');
