@@ -54,9 +54,10 @@ $(document).ready(function () {
         });
     });
     $(document).on('scroll', function () {
-        let headerStyle = $('.main-header');
-        let navBarStyle = $('.nav-bar');
-        let welcomeSection =$('.welcome');
+        let
+            headerStyle = $('.main-header'),
+            navBarStyle = $('.nav-bar'),
+            welcomeSection =$('.welcome');
 
         if ($(welcomeSection).position().top > 38){
             headerStyle.css('height',  '70px');
