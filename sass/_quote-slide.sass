@@ -3,19 +3,27 @@
 
 .slide
     @media (max-width: 1077px)
-        display: flex
         flex-wrap: wrap
 
 .slide-info
-    width: 30%
+    width: 35%
+    position: inherit
+    padding: 0 1em 0 1em
     color: #e8ecee
     margin-left: 2em
     align-items: center
+    blockquote
+        font-style: italic
     @media (max-width: 1077px)
         width: 100%
         padding-top: 2em
 
+.slide-info-wrap
+    width: 100%
+
 .slide-red-side
+    width: 60%
+    position: relative
     background-color: #53354a
     @media (max-width: 1077px)
         width: 100%
@@ -24,17 +32,16 @@
     position: relative
     background-color: #53354a
 
-.else-slide
-    display: none
-
-.slide-active
+.first-slide
     display: flex
 
+.slide-two
+    display: none
 
 .slide-image
     padding: 0
 
-.pagin
+.pagination
     width: 100%
     justify-content: center
     display: flex
